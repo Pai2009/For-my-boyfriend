@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numpad Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ใส่รหัส</h1>
+    <div id="numpad">
+        <input type="text" id="inputCode" placeholder="Enter code" readonly>
+        
+        <div class="numpad-row">
+            <button onclick="pressNum('1', 'Button 1')">1</button>
+            <button onclick="pressNum('2', 'Button 2')">2</button>
+            <button onclick="pressNum('3', 'Button 3')">3</button>
+        </div>
+        <div class="numpad-row">
+            <button onclick="pressNum('4', 'Button 4')">4</button>
+            <button onclick="pressNum('5', 'Button 5')">5</button>
+            <button onclick="pressNum('6', 'Button 6')">6</button>
+        </div>
+        <div class="numpad-row">
+            <button onclick="pressNum('7', 'Button 7')">7</button>
+            <button onclick="pressNum('8', 'Button 8')">8</button>
+            <button onclick="pressNum('9', 'Button 9')">9</button>
+        </div>
+        <div class="numpad-row">
+            <button onclick="pressNum('0', 'Button 0')">0</button>
+            <button onclick="pressNum('/', 'Button /')">/</button>
+            <button onclick="clearNum()">C</button>
+        </div>
+
+        <!-- ปรับปรุงปุ่ม Hint -->
+        <button onclick="showHint()">คำใบ้</button>
+        
+        <button onclick="checkCode()">ยืนยัน</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

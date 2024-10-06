@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เลือก cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>เลือก cards</h1>
+    <div class="envelopes">
+        <div class="envelope" onclick="selectCard(1)">cards 1</div>
+        <div class="envelope" onclick="selectCard(2)">cards 2</div>
+        <div class="envelope" onclick="selectCard(3)">cards 3</div>
+        <div class="envelope" onclick="selectCard(4)">cards 4</div>
+        <div class="envelope" onclick="selectCard(5)">cards 5</div>
+        <div class="envelope" onclick="selectCard(6)">cards 6</div>
+    </div>
+
+    <!-- Modal สำหรับแสดงข้อความและ GIF -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="messageText"></p>
+            <img id="gifImg" src="" alt="GIF" />
+        </div>
+    </div>
+
+    <script src="cards.js"></script>
+</body>
+</html>
